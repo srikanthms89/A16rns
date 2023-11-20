@@ -3,24 +3,26 @@ package com.tns.dayfour.thirdpackage;
 
 public class MyClass {
 	
-	private static MyClass obj =new MyClass();
-	
+	private static MyClass obj=new MyClass();
 	private int id;
-
-	public static MyClass getObj() {
-		return obj;
-	}
-
-	public static void setObj(MyClass obj) {
-		MyClass.obj = obj;
-	}
-
-	public int getId() {
+	
+	public int getId()
+	{
 		return id;
 	}
-
-	public void setId(int id) {
-		this.id = id;
+	
+	public void setId(int id)
+	{
+		this.id=id;
+	}
+	
+	private MyClass() {
+		System.out.println("MyClass object created");		
+	}
+	
+	public static MyClass getObject() //factory method
+	{
+		return obj;
 	}
 
 	@Override
@@ -28,9 +30,4 @@ public class MyClass {
 		return "MyClass [id=" + id + "]";
 	}
 	
-	
-	
-	
-	
-
 }
