@@ -3,7 +3,7 @@ package com.tns.dayeight.impinterfaces;
 //Bank Interface
 public interface Bank {
 	
-	double MIN_BAL = 1000;
+	double MIN_BALANCE = 1000;
 	double DEPOSIT_LIMIT = 25000;
 	double INT_RATE = 8.7;
 	
